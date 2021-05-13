@@ -35,14 +35,14 @@ def test_keyword_arguments():
 
 
 def test_combination_arguments():
-    expected = 'purple', 'blue', 'red', 'chartreuse'
-    assert return_colors('purple', link_color='red', back_color='blue') == expected
+    expected = 'pearl', 'opal', 'jade', 'gray'
+    assert return_colors('pearl', link_color='jade', back_color='opal') == expected
 
 
 def test_tuple_dict_arguments():
     regular = ('red', 'blue')
     links = {'link_color': 'chartreuse'}
-    expected = 'red', 'blue', 'chartreuse','chartreuse'
+    expected = 'red', 'blue', 'chartreuse','gray'
     assert return_colors(*regular, **links) == expected
 
 # Part 2 for generic parameters below ---------------------------------------------------------------------
@@ -59,11 +59,11 @@ def test_improved_keyword_arguments():
 
 
 def test_improved_combination_arguments():
-    expected = 'purple', 'blue', 'red', 'chartreuse'
+    expected = 'purple', 'blue', 'red', 'pink'
     assert improved_return('purple', link_color='red', back_color='blue') == expected
 
 def test_improved_tuple_dict_arguments():
     regular = ('red', 'blue')
     links = {'link_color': 'chartreuse'}
-    expected = 'red', 'blue', 'chartreuse','chartreuse'
+    expected = 'red', 'blue', 'chartreuse','pink'
     assert improved_return(*regular, **links) == expected
