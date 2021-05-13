@@ -1,5 +1,7 @@
 """
-Write a function that has four optional parameters (with defaults):
+PART ONE-------------------------------------------------------------------------------------------------
+
+Write a function (return_colors)that has four optional parameters (with defaults):
 (1)fore_color
 (2)back_color
 (3)link_color
@@ -23,4 +25,30 @@ return_color('purple', link_color='red', back_color='blue')
     (4b) links = {'link_color': 'chartreuse'}
     (4c) return_color(*regular, **links)
 
+PART TWO-------------------------------------------------------------------------------------------------
+
+Write a new function (improved_return) with the parameters as:
+
+*args and **kwargs
+
+Have it return the colors (use strings for the colors again)
+
+Call it with the same various combinations of arguments used above.
+
+Also have it print args and kwargs directly, so you can be sure you understand what’s going on.
+
+Note that in general, you can’t know what will get passed into **kwargs So maybe adapt your function to be able to do something reasonable with any keywords.
+
 """
+
+
+
+def return_colors(fore_color='red', back_color='blue', link_color='yellow', visited_color='chartreuse'):
+    print(f'The fore_color is {fore_color}.')
+    print(f'The back_color is {back_color}.')
+    print(f'The link_color is {link_color}.')
+    print(f'The visited_color is {visited_color}.')
+    return fore_color, back_color, link_color, visited_color
+
+def improved_return()
+    return
