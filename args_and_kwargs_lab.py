@@ -50,5 +50,34 @@ def return_colors(fore_color='red', back_color='blue', link_color='yellow', visi
     print(f'The visited_color is {visited_color}.')
     return fore_color, back_color, link_color, visited_color
 
-def improved_return()
-    return
+def improved_return(*args, **kwargs):
+    print(f'The positional arguments are: {args}')
+    print(f'The keyword arguments are: {kwargs}')
+    # Default values for the returned colors if none are given
+    fore_color = 'red'
+    back_color = 'blue'
+    link_color = 'yellow'
+    visited_color = 'chartreuse'
+
+    #Overrides the values from **kwargs
+    
+
+
+    # Overrides the values from the *args input
+    for index in range(0,len(args)):
+        if index == 0:
+            fore_color = args[0]
+        if index == 1:
+            back_color = args[1]
+        if index == 2:
+            link_color = args[2]
+        if index == 3:
+            visited_color = args[3]
+
+
+    return fore_color, back_color, link_color, visited_color
+
+#improved_return('one', 'two', 'three')
+#improved_return()
+# kwargs = {'fore_color': 'white', 'back_color': 'black', 'link_color': 'gray', 'visited_color': 'silver'}
+# improved_return(**kwargs)
