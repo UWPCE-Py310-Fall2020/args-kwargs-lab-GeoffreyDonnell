@@ -89,4 +89,4 @@ def improved_return(*args, **kwargs):
     return fore_color, back_color, link_color, visited_color
 
 
-improved_return('purple', link_color='red', back_color='blue')
+
